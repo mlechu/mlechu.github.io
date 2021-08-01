@@ -1,0 +1,24 @@
+body {
+  margin: auto auto;
+  width: 50%;
+}
+
+p {
+  color: #111;
+}
+
+header {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #56abe4;
+}
+
+header a {
+  margin-right: 2rem;
+}

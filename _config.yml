@@ -1,0 +1,10 @@
+# dump _pages into root
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
+permalink: /blog/:year/:month/:day/:title
+
+sass:
+  sass_dir: styles
