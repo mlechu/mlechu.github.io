@@ -1,3 +1,8 @@
+title: echu's site
+
+# avoid "but it works locally"
+--safe: true
+
 # dump _pages into root
 collections:
   pages:

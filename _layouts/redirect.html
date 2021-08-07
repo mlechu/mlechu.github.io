@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Redirecting{% if page.title %} to {{page.title}}{% endif %}...
+  </title>
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  <script>
+    // window.location = "{{page.redirect}}"
+    // window.location.href = "{{page.redirect}}"
+  </script>
+</head>
+
+<body>
+{% include header.html %}
+<div class="container">
+  <h1>{{site.title}}</h1>
+  <p> If you haven't been redirected yet, head over to 
+    <a href={{page.redirect}}>{{page.redirect}}</a>
+  </p>
+  {{ content }}
+</div>
+{% include footer.html %}
+</body>
+</html>
