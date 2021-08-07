@@ -1,6 +1,12 @@
 body {
+  // font-family: 'source sans pro';
+  font-family: 'Source Sans Pro', 'Open Sans', system-ui, sans-serif, 'Apple Color Emoji';
   margin: auto auto;
   width: 50%;
+}
+
+code {
+  font-family: 'source code pro', monospace;
 }
 
 p {
@@ -21,4 +27,13 @@ a {
 
 header a {
   margin-right: 2rem;
+}
+
+ul.blogposts{
+  list-style: none;
+  padding: 0rem;
+  .date {
+    font-weight: bold;
+    color:#111;
+  }
 }

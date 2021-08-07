@@ -1,6 +1,6 @@
 ---
 layout: default
-title: projects
+title: Projects
 ---
 
 <h1>{{ page.title }}</h1>
