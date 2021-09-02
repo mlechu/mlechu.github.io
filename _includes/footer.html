@@ -1,6 +1,11 @@
-<br><br><br>
-
 <footer>
   <!-- 🦶 -->
-  <a href="https://github.com/mlechu/mlechu.github.io">source code</a>
+  <span>
+    <!-- <a href="https://github.com/mlechu/mlechu.github.io">source code</a> -->
+    <script>
+      const x = 'mail'
+      const address = x + '@' + window.location.hostname;
+      document.write('<a href="'+ x + 'to:' + address + '">' + 'e' + x + ': ' + address + '</a>');
+    </script>
+  </span>
 </footer>

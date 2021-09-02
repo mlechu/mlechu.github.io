@@ -1,39 +1,96 @@
-body {
-  // font-family: 'source sans pro';
-  font-family: 'Source Sans Pro', 'Open Sans', system-ui, sans-serif, 'Apple Color Emoji';
+@import "colours";
+
+.container {
   margin: auto auto;
   width: 50%;
 }
 
-code {
-  font-family: 'source code pro', monospace;
+h1 {
+  color: $c-purple;
 }
 
 p {
-  color: #111;
+  color: $c-text-dark;
+}
+
+body {
+  margin: 0;
+}
+
+.colour-span {
+  background: $c-lightblue;
+  background: linear-gradient(135deg, $c-lightblue, $c-purple);
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  h1 {
+    color: white;
+  }
+}
+
+#text-anim-cursor {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 header {
   display: flex;
-  margin-top: 2rem;
-  margin-left: auto;
+  justify-content: space-between;
   font-weight: bold;
+  & > nav > a {
+    text-decoration: none;
+    color: $c-text-dark !important;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    &.home {
+      color: $c-purple !important;
+    }
+    &:hover {
+      text-decoration: underline solid $c-lightblue 2.5px;
+      text-underline-offset: 2px;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  padding-top: 4rem;
+  font-size: small;
+  span {
+    display: inline-block;
+  }
 }
 
 a {
-  text-decoration: none;
-  color: #56abe4;
+  color: inherit;
+  &:visited {
+    color: $c-purple;
+  }
+  &:hover {
+    color: $c-lightblue;
+  }
 }
 
-header a {
-  margin-right: 2rem;
-}
-
-ul.blogposts{
+ul.blogposts {
   list-style: none;
   padding: 0rem;
   .date {
     font-weight: bold;
-    color:#111;
+    color: #111;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
   }
 }

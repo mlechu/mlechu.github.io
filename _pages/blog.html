@@ -2,14 +2,15 @@
 layout: default
 title: Blog
 ---
-
-<h1>echu's descent into madness</h1>
-
-<ul class="blogposts">
-  {% for post in site.posts %}
+<div class="container">
+  <h1>echu's descent into madness</h1>
+  
+  <ul class="blogposts">
+    {% for post in site.posts %}
     <li class="blogpost"><span>
       <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
       <a href="{{ post.url }}" >{{ post.title }}</a></span>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div>

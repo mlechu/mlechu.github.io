@@ -3,4 +3,12 @@
 ---
 
 @import "base";
-@import "test";
+@import "colours";
+
+* {
+  font-family: 'Source Sans Pro', 'Open Sans', system-ui, sans-serif, 'Apple Color Emoji';
+}
+
+code {
+  font-family: 'source code pro', monospace;
+}
